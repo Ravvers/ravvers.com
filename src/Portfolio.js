@@ -7,7 +7,7 @@ function Portfolio() {
           <div className='projects-wrapper'>
 
             <div className='project-wrapper'>
-              <div className='project-img-background' id='project1'></div>
+              <div className='project-img-background img-lighten' id='project1'></div>
               
               <div className='img-text-wrapper'>
                 <div className='logo-wrapper'>
@@ -28,7 +28,7 @@ function Portfolio() {
             </div>
 
             <div className='project-wrapper'>
-              <div className='project-img-background' id='project2'></div>
+              <div className='project-img-background img-lighten' id='project2'></div>
               
               <div className='img-text-wrapper'>
                 <div className='logo-wrapper'>
@@ -48,7 +48,7 @@ function Portfolio() {
             </div>
 
             <div className='project-wrapper'>
-              <div className='project-img-background' id='project4'></div>
+              <div className='project-img-background img-lighten' id='project4'></div>
               
               <div className='img-text-wrapper'>
                 <div className='logo-wrapper'>
@@ -68,7 +68,7 @@ function Portfolio() {
             </div>
 
             <div className='project-wrapper'>
-              <div className='project-img-background' id='project3'></div>
+              <div className='project-img-background img-lighten' id='project3'></div>
               
               <div className='img-text-wrapper'>
                 <div className='logo-wrapper'>
@@ -88,7 +88,7 @@ function Portfolio() {
             </div>
 
             <div className='project-wrapper'>
-              <div className='project-img-background' id='projectSocialMedia'></div>
+              <div className='project-img-background img-lighten' id='projectSocialMedia'></div>
               
               <div className='img-text-wrapper'>
                 <div className='logo-wrapper'>
@@ -108,7 +108,7 @@ function Portfolio() {
             </div>
 
             <div className='project-wrapper'>
-              <div className='project-img-background' id='projectContactMe'></div>
+              <div className='project-img-background img-lighten' id='projectContactMe'></div>
               
               <div className='img-text-wrapper'>
                 <div className='logo-wrapper'>

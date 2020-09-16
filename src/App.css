@@ -75,6 +75,17 @@ p {
 
 /* Portfolio Styles */
 
+#portfolio {
+  max-width: 1300px;
+}
+
+@media screen and (min-width: 1300px) {
+  #portfolio {
+    margin: 0 auto;
+    width: 1300px;
+  }
+}
+
 #project1 {
   background-image:url(images/projectFamilyshopping.jpg);
 }
