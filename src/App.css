@@ -1,38 +1,413 @@
+/* Master Styling */
 .App {
-  text-align: center;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  font-family: 'Indie Flower', cursive;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+p {
+  font-family: 'Open Sans', sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+/* Nav Styling */
+#nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  background-color: #EDEDED;
+}
+
+#left {
+  font-family: 'Indie Flower', cursive;
+  font-size: 1.3em;
+}
+
+#left a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#right {
+  display: flex;
+  font-family: 'Indie Flower', cursive;
+  font-size: 1.3em;
+}
+
+#nav > #right > div {
+  margin-right: 20px;
+  font-size: 0.9em;
+}
+
+.nav-link-wrapper {
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.5s;
+}
+
+.nav-link-wrapper a {
+  color:#8a8a8a;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+
+.nav-link-wrapper:hover {
+  border-bottom: 1px solid black;
+}
+
+.nav-link-wrapper a:hover {
+  color: black;
+}
+
+/* Banner Styles */
+
+.banner {
+  min-height: 20vh;
+  background-color: blue;
+}
+
+/* Portfolio Styles */
+
+#project1 {
+  background-image:url(images/projectFamilyshopping.jpg);
+}
+
+#project2 {
+  background-image:url(images/projectSurekascakes.jpg);
+}
+
+#project3 {
+  background-image:url(images/projectSamLu.jpg);
+}
+
+#project4 {
+  background-image:url(images/projectValorantXP.jpg)
+}
+
+#projectSocialMedia {
+  background-image: url(images/socialmedia.jpg);
+}
+
+#projectContactMe {
+  background-image: url(images/contactme.png);
+}
+
+.projects-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.project-wrapper {
+  position: relative;
+}
+
+.project-img-background {
+  height: 350px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.img-text-wrapper {
+  position: absolute;
+  top: 0;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  height: 100%;
+  text-align: center;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.logo-wrapper img {
+  width: 50%;
+  margin-bottom: 20px;
+}
+
+.logo-wrapper {
+  color: white;
+
+}
+
+.logo-wrapper p {
+  margin-bottom: 20px;
+  font-size: 3.5em;
+  
+}
+
+@font-face {
+  font-family: 'VALORANT';
+  src: url("fonts/Valorant-Font.ttf");
+}
+
+#family-shopping-logo {
+  font-family: 'Dosis', sans-serif;
+}
+
+#surekas-cakes-logo {
+  font-family: 'Lobster', cursive;
+}
+
+#samlu-logo {
+  font-family: 'Poppins', sans-serif;
+}
+
+#valorant-logo {
+  font-family: 'VALORANT';
+  font-size: 2.5em;
+}
+
+.website-default {
+  font-family: 'Indie Flower', cursive;
+}
+
+/*.img-text-wrapper {
+  background-color: red;
+}*/
+
+.img-text-wrapper .project-description {
+  font-weight: 600;
+  transition: 1s;
+  color: transparent;
+  margin-bottom: 20px;
+}
+
+.img-text-wrapper:hover .project-description {
+  font-weight: 600;
+  color: lightseagreen;
+  margin-bottom: 20px;
+}
+
+.img-darken {
+  transition: 1s;
+  filter: brightness(30%);
+}
+
+.img-lighten {
+  transition: 1s;
+  filter: brightness(80%);
+}
+
+.project-status-production {
+  font-weight: 400;
+  transition: 1s;
+  color: transparent;
+}
+
+.project-status-live {
+  font-weight: 400;
+  transition: 1s;
+  color: transparent;
+}
+
+.img-text-wrapper:hover .project-status-production {
+  font-weight: 400;
+  color: #e05858;
+}
+
+.img-text-wrapper:hover .project-status-live {
+  font-weight: 400;
+  color: #51d6b1;
+}
+
+.live-preview-icon {
+  font-size: 2em;
+  position: absolute;
+  margin-left: 15%;
+}
+
+.img-text-wrapper:hover .live-preview-icon {
+  font-size: 2em;
+}
+
+.live-preview-icon:hover {
+  color: white;
+  font-size: 2em;
+}
+
+.github-icon {
+  font-size: 2em;
+}
+
+.github-icon:hover{
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.linkedin-icon {
+  position: relative;
+  font-size: 2em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.github-icon-portfolio {
+  position: absolute;
+  margin-left: 25%;
+}
+
+.github-icon-socials {
+  position: relative;
+  padding: 20px;
+}
+
+.social-links {
+  text-align: center;
+  margin-top: -30px;
+}
+
+.linkedin-icon:hover {
+  color: white;
+}
+
+.project-status-live a {
+  color: inherit;
+  font-size: 0.8em;
+}
+
+.live-tick {
+  font-size: 0.8em;
+  padding-left: 5px;
+}
+
+.in-production-cross {
+  font-size: 0.8em;
+  padding-left: 10px;
+}
+
+@media screen and (max-width: 972px) {
+  .projects-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
-  to {
-    transform: rotate(360deg);
+
+  .project-img-background {
+    height: 350px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
+  
+  .img-text-wrapper {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-left: 20%;
+    padding-right: 15%;
+  }
+}
+
+@media screen and (max-width: 529px) {
+  .projects-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .project-img-background {
+    height: 350px;
+    width: 94%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: 3%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+  }
+  
+  .img-text-wrapper {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  .footer-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-link-wrapper {
+  }
+
+  footer {
+  }
+}
+
+/*Footer Styling*/
+
+footer {
+  background-color: #EDEDED;
+  height: 20vh;
+  text-align: center;
+  font-family: 'Indie Flower', cursive;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 4vh;
+  padding-bottom: 6vh;
+}
+
+.footer-link-wrapper{
+  color: #8a8a8a;
+}
+
+.footer-link-wrapper:hover {  
+  color: black;
+}
+
+.footer-link-wrapper a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* About Styling*/
+#about {
+  text-align: center;
+}
+
+.about-section-text {
+  width: 65vw;
+  margin: 0 auto;
+  margin-bottom: 18vh;
+  font-size: 1.2em;
+}
+
+#message-me-button {
+  text-transform: capitalize;
+  font-family: 'Indie Flower', cursive;
+  font-size: 0.9em;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.email-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+#about-last-section {
+  margin-bottom: 2vh;
 }
