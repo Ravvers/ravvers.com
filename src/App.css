@@ -2,14 +2,7 @@
 .App {
   margin: 0px;
   padding: 0px;
-}
-
-@media only screen and (max-device-width: 500px) {
-  .App {
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden;
-  }
+  overflow-x: hidden;
 }
 
 h1 {
@@ -31,6 +24,7 @@ p {
   justify-content: space-between;
   padding: 30px;
   background-color: #EDEDED;
+  margin-bottom: 10px;
 }
 
 #left {
@@ -84,13 +78,6 @@ p {
 
 #portfolio {
   max-width: 1300px;
-}
-
-@media screen and (min-width: 1300px) {
-  #portfolio {
-    margin: 0 auto;
-    width: 1300px;
-  }
 }
 
 #project1 {
@@ -300,6 +287,73 @@ p {
   padding-left: 10px;
 }
 
+/* About Styling*/
+#about {
+  text-align: center;
+}
+
+.about-section-text {
+  width: 65vw;
+  margin: 0 auto;
+  margin-bottom: 18vh;
+  font-size: 1.2em;
+}
+
+#message-me-button {
+  text-transform: capitalize;
+  font-family: 'Indie Flower', cursive;
+  font-size: 0.9em;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.email-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+#about-last-section {
+  margin-bottom: 2vh;
+}
+
+/*Footer Styling*/
+
+footer {
+  background-color: #EDEDED;
+  height: 20vh;
+  text-align: center;
+  font-family: 'Indie Flower', cursive;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 4vh;
+  padding-bottom: 6vh;
+}
+
+.footer-link-wrapper{
+  color: #8a8a8a;
+}
+
+.footer-link-wrapper:hover {  
+  color: black;
+}
+
+.footer-link-wrapper a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 1300px) {
+  #portfolio {
+    margin: 0 auto;
+    width: 1300px;
+  }
+}
+
 @media screen and (max-width: 972px) {
   .projects-wrapper {
     display: grid;
@@ -363,69 +417,14 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 5px;
   }
 
   .footer-link-wrapper {
   }
-
+  
   footer {
+    height: 165px;
+    margin-top: 10px;
   }
-}
-
-/*Footer Styling*/
-
-footer {
-  background-color: #EDEDED;
-  height: 20vh;
-  text-align: center;
-  font-family: 'Indie Flower', cursive;
-}
-
-.footer-links {
-  display: flex;
-  justify-content: space-evenly;
-  padding-top: 4vh;
-  padding-bottom: 6vh;
-}
-
-.footer-link-wrapper{
-  color: #8a8a8a;
-}
-
-.footer-link-wrapper:hover {  
-  color: black;
-}
-
-.footer-link-wrapper a {
-  color: inherit;
-  text-decoration: none;
-}
-
-/* About Styling*/
-#about {
-  text-align: center;
-}
-
-.about-section-text {
-  width: 65vw;
-  margin: 0 auto;
-  margin-bottom: 18vh;
-  font-size: 1.2em;
-}
-
-#message-me-button {
-  text-transform: capitalize;
-  font-family: 'Indie Flower', cursive;
-  font-size: 0.9em;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
-.email-link {
-  text-decoration: none;
-  color: inherit;
-}
-
-#about-last-section {
-  margin-bottom: 2vh;
 }
