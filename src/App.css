@@ -24,7 +24,6 @@ p {
   justify-content: space-between;
   padding: 30px;
   background-color: #EDEDED;
-  margin-bottom: 10px;
 }
 
 #left {
@@ -383,6 +382,10 @@ footer {
 }
 
 @media screen and (max-width: 529px) {
+  #nav {
+    margin-bottom: 10px;
+  }
+  
   .projects-wrapper {
     display: grid;
     grid-template-columns: 1fr;
