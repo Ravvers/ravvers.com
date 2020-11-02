@@ -1,5 +1,4 @@
 import React from 'react';
-//import logo from './logo.svg';
 import './App.css';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import Nav from './Nav';
@@ -7,6 +6,7 @@ import Nav from './Nav';
 import Portfolio from './Portfolio';
 import About from './About'
 import Footer from './Footer';
+import Blog from './Blog';
 
 function App() {
   return (
@@ -17,6 +17,7 @@ function App() {
         <Switch>
           <Route exact path='/' component={Portfolio}/>
           <Route path='/about' component={About}/>
+          <Route path='/blog' component={Blog} />
           <Route default component={Portfolio}/>
         </Switch>
       </div>

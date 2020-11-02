@@ -18,6 +18,9 @@ function Footer() {
               <a href='/about'>About</a>
             </div>
             <div className='footer-link-wrapper'>
+              <a href='/blog'>Blog</a>
+            </div>
+            <div className='footer-link-wrapper'>
               <a href='mailto:rmaldeni@gmail.com'>Contact me</a>
             </div>
           </div>

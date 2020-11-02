@@ -13,6 +13,9 @@ function Nav() {
             <div className='nav-link-wrapper'>
               <a href='/about'>About</a>
             </div>
+            <div className='nav-link-wrapper'>
+              <a href='/blog'>Blog</a>
+            </div>
           </div>
         </div>
     );
