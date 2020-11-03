@@ -52,11 +52,11 @@ function Portfolio() {
               
               <div className='img-text-wrapper'>
                 <div className='logo-wrapper'>
-                  <p id='valorant-logo'>VAlorant XP Calc</p>
+                  <p id='theorycrafter-logo'>Theory Crafter</p>
                 </div>
 
                 <div className='project-description'>
-                  An experience point calculator for the online game Valorant
+                  An environment for theorycrafting ideas for the game <span className='italics'>League of Legends</span>
                 </div>
 
                 <div className='project-status-production'>
